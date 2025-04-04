@@ -1,0 +1,35 @@
+{
+  "name": "api-champions-leagues",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env src/server.ts",
+    "start:dist": "npm run dist && node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlayonaDev/api-champions-leagues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PlayonaDev/api-champions-leagues/issues"
+  },
+  "homepage": "https://github.com/PlayonaDev/api-champions-leagues#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

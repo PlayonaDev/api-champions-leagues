@@ -1,8 +1,26 @@
+import * as playerRepository from "../repositories/players-repository";
+import * as httpResponse from "../utils/http-helper";
+
 export const getPlayerService = async () => {
-  return {
-    id: 1,
-    name: "Vítor Dev.FullStack Pleno",
-    club: "4Smart",
-    salarie: "R$ 7.500",
-  };
+  const data = await playerRepository.findALlPlayers();
+
+  let response = null;
+
+  data
+    ? (response = httpResponse.ok(data))
+    : (response = httpResponse.noContent());
+
+  return response;
+};
+
+export const getPlayerByIdService = async (id: number) => {
+  const data = await playerRepository.findPlayerById(id);
+
+  let response = null;
+
+  data
+    ? (response = httpResponse.ok(data))
+    : (response = httpResponse.noContent());
+
+  return response;
 };

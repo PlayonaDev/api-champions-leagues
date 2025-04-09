@@ -6,4 +6,6 @@ const router = Router();
 router.get("/players", playerControllers.getPlayer);
 router.get(`/players/:id`, playerControllers.getPlayerById);
 
+router.post("/players", playerControllers.postPlayer);
+
 export default router;

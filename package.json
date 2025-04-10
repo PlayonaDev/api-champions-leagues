@@ -24,12 +24,14 @@
   "homepage": "https://github.com/PlayonaDev/api-champions-leagues#readme",
   "description": "",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }

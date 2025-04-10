@@ -19,11 +19,14 @@ export const postPlayer = async (req: Request, res: Response) => {
   const bodyValue = req.body;
   const httpResponse = await playersServices.createPlayerService(bodyValue);
 
-  console.log(`Retorno Controller: ${bodyValue}`);
   if (httpResponse) {
     res.status(httpResponse.statusCode).json(httpResponse.body);
-  } else {
-    const response = await noContent();
-    res.status(response.statusCode).json(response.body);
   }
+};
+
+export const deletePlayer = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  const httpResponse = await playersServices.deletePlayerService(id);
+
+  res.status(httpResponse?.statusCode).json(httpResponse.body);
 };

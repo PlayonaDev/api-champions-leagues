@@ -29,18 +29,22 @@ export const getPlayerByIdService = async (id: number) => {
 export const createPlayerService = async (player: PlayerModel) => {
   let response = null;
 
-  if (Object.keys(player).length === 0) {
-    await playerRepository.insertPlayer(player);
-    response = httpResponse.created();
-    console.log(`Retorno player ${player}`);
-  } else {
-    response = httpResponse.badRequest();
-    console.log(`Retorno bad request ${response}`);
-  }
-  // Object.keys(player).length === 0
-  //   ? (await playerRepository.insertPlayer(player),
-  //     (response = httpResponse.created()))
-  //   : (response = httpResponse.badRequest());
+  Object.keys(player).length !== 0
+    ? (await playerRepository.insertPlayer(player),
+      (response = httpResponse.created()),
+      console.log(`😅 Sucessful 😍 ${player.name} criado com sucesso.`))
+    : ((response = httpResponse.badRequest()),
+      console.log(
+        `🤬 Bad Request 🫠 () => {Result Body} return: ${(await response).body}`
+      ));
+
+  return response;
+};
+
+export const deletePlayerService = async (id: number) => {
+  let response = null;
+  await playerRepository.deletePlayerById(id);
+  response = httpResponse.ok({ message: "Sucessful delete" });
 
   return response;
 };

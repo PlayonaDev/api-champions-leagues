@@ -286,3 +286,11 @@ export const findPlayerById = async (
 export const insertPlayer = async (player: PlayerModel) => {
   database.push(player);
 };
+
+export const deletePlayerById = async (id: number) => {
+  const index = database.findIndex((player) => player.id === id);
+
+  if (index !== -1) {
+    database.slice(index, 1);
+  }
+};

@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "Paris Saint-Germain FC",
+    "foundationYear": 1970,
+    "country": "France",
+    "league": "Ligue 1",
+    "stadium": "Parc des Princes",
+    "titles": {
+      "national": [
+        "Ligue 1 (12)",
+        "Coupe de France (14)",
+        "Coupe de la Ligue (9)"
+      ],
+      "international": []
+    },
+    "coach": "Luis Enrique",
+    "squadSize": 28,
+    "value": "€970M"
+  },
+  {
+    "id": 2,
+    "name": "Manchester United FC",
+    "foundationYear": 1878,
+    "country": "England",
+    "league": "Premier League",
+    "stadium": "Old Trafford",
+    "titles": {
+      "national": [
+        "Premier League (20)",
+        "FA Cup (12)",
+        "League Cup (6)"
+      ],
+      "international": [
+        "UEFA Champions League (3)",
+        "UEFA Europa League (1)",
+        "UEFA Cup Winners' Cup (1)"
+      ]
+    },
+    "coach": "Erik ten Hag",
+    "squadSize": 27,
+    "value": "€3.72B"
+  },
+  {
+    "id": 3,
+    "name": "Real Madrid CF",
+    "foundationYear": 1902,
+    "country": "Spain",
+    "league": "La Liga",
+    "stadium": "Santiago Bernabéu",
+    "titles": {
+      "national": [
+        "La Liga (36)",
+        "Copa del Rey (20)",
+        "Supercopa de España (13)"
+      ],
+      "international": [
+        "UEFA Champions League (15)",
+        "UEFA Europa League (2)",
+        "FIFA Club World Cup (5)"
+      ]
+    },
+    "coach": "Carlo Ancelotti",
+    "squadSize": 25,
+    "value": "€5.1B"
+  },
+  {
+    "id": 4,
+    "name": "FC Barcelona",
+    "foundationYear": 1899,
+    "country": "Spain",
+    "league": "La Liga",
+    "stadium": "Spotify Camp Nou",
+    "titles": {
+      "national": [
+        "La Liga (27)",
+        "Copa del Rey (31)",
+        "Supercopa de España (14)"
+      ],
+      "international": [
+        "UEFA Champions League (5)",
+        "UEFA Cup Winners' Cup (4)",
+        "FIFA Club World Cup (3)"
+      ]
+    },
+    "coach": "Xavi Hernández",
+    "squadSize": 24,
+    "value": "€4.8B"
+  },
+  {
+    "id": 5,
+    "name": "Manchester City FC",
+    "foundationYear": 1880,
+    "country": "England",
+    "league": "Premier League",
+    "stadium": "Etihad Stadium",
+    "titles": {
+      "national": [
+        "Premier League (10)",
+        "FA Cup (7)",
+        "League Cup (8)"
+      ],
+      "international": [
+        "UEFA Champions League (1)",
+        "UEFA Cup Winners' Cup (1)"
+      ]
+    },
+    "coach": "Pep Guardiola",
+    "squadSize": 26,
+    "value": "€4.99B"
+  },
+  {
+    "id": 6,
+    "name": "Liverpool FC",
+    "foundationYear": 1892,
+    "country": "England",
+    "league": "Premier League",
+    "stadium": "Anfield",
+    "titles": {
+      "national": [
+        "Premier League (19)",
+        "FA Cup (8)",
+        "League Cup (10)"
+      ],
+      "international": [
+        "UEFA Champions League (6)",
+        "UEFA Cup (3)",
+        "UEFA Super Cup (4)"
+      ]
+    },
+    "coach": "Jürgen Klopp",
+    "squadSize": 27,
+    "value": "€4.7B"
+  },
+  {
+    "id": 7,
+    "name": "FC Bayern Munich",
+    "foundationYear": 1900,
+    "country": "Germany",
+    "league": "Bundesliga",
+    "stadium": "Allianz Arena",
+    "titles": {
+      "national": [
+        "Bundesliga (34)",
+        "DFB-Pokal (20)",
+        "DFL-Supercup (10)"
+      ],
+      "international": [
+        "UEFA Champions League (6)",
+        "UEFA Cup Winners' Cup (1)",
+        "FIFA Club World Cup (2)"
+      ]
+    },
+    "coach": "Thomas Tuchel",
+    "squadSize": 29,
+    "value": "€4.28B"
+  }
+]

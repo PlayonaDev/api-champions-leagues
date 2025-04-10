@@ -24,6 +24,18 @@ export const postPlayer = async (req: Request, res: Response) => {
   }
 };
 
+export const updatePlayer = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  const bodyValue = req.body;
+
+  const httpResponse = await playersServices.updatePlayerByIdService(
+    id,
+    bodyValue
+  );
+
+  res.status(httpResponse.statusCode).json(httpResponse.body);
+};
+
 export const deletePlayer = async (req: Request, res: Response) => {
   const id = parseInt(req.params.id);
   const httpResponse = await playersServices.deletePlayerService(id);
